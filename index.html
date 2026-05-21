@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio Zayd BENZAKOUR</title>
+  </head>
+  <body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+      <a class="logo" href="#hero">
+        <img
+          src="assets/icons/logo-sans-fond.png"
+          alt="Logo"
+          class="logo-img"
+        />
+        <span>BENZAKOUR Zayd</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hero">Accueil </a></li>
+          <li><a href="#about">À propos </a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#journey">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>BENZAKOUR Zayd</h1>
+            <p class="hero-subtitle">Étudiant en BUT Informatique</p>
+            <p class="hero-intro">
+              Je construis progressivement mes compétences en développement,
+              bases de données, Linux et administration de serveurs à travers
+              des projets concrets.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn-primary" href="#projects">Voir mes projets</a>
+              <a class="btn-secondary" href="#contact">Me contacter</a>
+              <a
+                class="btn-secondary"
+                href="assets/cv/CV_BENZAKOUR_ZAYD.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir mon CV
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="assets/images/pdplinkedin.png"
+              alt="Portrait de BENZAKOUR Zayd"
+              class="hero-photo"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>À propos</h2>
+        <div class="about-card">
+          <p>
+            Je suis étudiant en BUT Informatique à Nancy. Je m’intéresse
+            particulièrement au développement backend, aux bases de données, à
+            Linux et aux environnements serveur. À travers mes projets
+            personnels et universitaires, je cherche à apprendre en construisant
+            des solutions concrètes, utiles et évolutives.
+          </p>
+        </div>
+      </section>
+      <!-- EN CE MOMENT -->
+      <section id="current">
+        <h2>En ce moment</h2>
+
+        <div class="current-grid">
+          <article class="current-card">
+            <h3>Backend & Java</h3>
+            <p>
+              Je consolide mes bases en programmation orientée objet, en
+              structuration de projets Java et en conception d’applications
+              simples mais propres.
+            </p>
+          </article>
+
+          <article class="current-card">
+            <h3>Bases de données</h3>
+            <p>
+              Je travaille avec SQL, Oracle SQL et PL/SQL pour comprendre la
+              modélisation, les requêtes et la logique côté base de données.
+            </p>
+          </article>
+
+          <article class="current-card">
+            <h3>Linux & serveurs</h3>
+            <p>
+              Je mets en place un serveur personnel avec Raspberry Pi, Docker et
+              des services réseau pour apprendre l’administration système de
+              manière concrète.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Langages</h3>
+            <ul>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Bases de données</h3>
+            <ul>
+              <li>Oracle SQL</li>
+              <li>PL/SQL</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Outils</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VSCode</li>
+              <li>IntelliJ IDEA</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Systèmes</h3>
+            <ul>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Raspberry Pi</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Portfolio personnel</h3>
+            <p>
+              Site web personnel destiné à présenter mon profil, mes
+              compétences, mon parcours et mes projets. Ce portfolio est aussi
+              un projet d’apprentissage : il me permet de travailler la
+              structure HTML, le design CSS, l’organisation d’un projet web et
+              le déploiement progressif vers un site professionnel avec nom de
+              domaine.
+            </p>
+            <p class="project-tech">HTML, CSS, JavaScript, Git, GitHub</p>
+            <p class="project-status">En cours</p>
+          </article>
+          <article class="project-card">
+            <h3>Serveur de backup personnel</h3>
+            <p>
+              Mise en place d’un serveur personnel basé sur un Raspberry Pi et
+              un SSD externe afin de centraliser, organiser et accéder à mes
+              fichiers depuis mon réseau local. Ce projet me permet de découvrir
+              concrètement l’administration Linux, les services réseau, Docker
+              et les bases de la sécurisation d’un serveur.
+            </p>
+            <p class="project-tech">
+              Linux, Raspberry Pi, Docker, File Browser, Samba, SSH
+            </p>
+            <p class="project-status">En cours d’amélioration</p>
+          </article>
+          <article class="project-card">
+            <h3>Library Manager Java</h3>
+            <p>
+              Application console développée en Java permettant de gérer une
+              bibliothèque de livres. Ce projet me sert à pratiquer la
+              programmation orientée objet, l’organisation du code, la
+              manipulation de données et l’utilisation de Git dans un projet
+              structuré.
+            </p>
+            <p class="project-tech">
+              Java, Programmation orientée objet, Git, GitHub
+            </p>
+            <p class="project-status">En cours</p>
+          </article>
+          <article class="project-card">
+            <h3>DevHub</h3>
+            <p>
+              Projet personnel visant à créer un espace centralisé pour
+              organiser mes projets, mes notes techniques, mes ressources et ma
+              progression en informatique. L’objectif est de construire
+              progressivement un outil utile pour suivre mon apprentissage en
+              développement, bases de données, Linux et administration serveur.
+            </p>
+            <p class="project-tech">HTML, CSS, JavaScript, Git, GitHub</p>
+            <p class="project-status">En réflexion</p>
+          </article>
+        </div>
+      </section>
+      <!-- JOURNEY -->
+      <section id="journey">
+        <h2>Parcours</h2>
+        <div class="journey-list">
+          <article class="journey-item">
+            <h3>BUT Informatique</h3>
+            <p class="journey-place">IUT Nancy-Charlemagne — Nancy</p>
+            <p class="journey-date">2025 - aujourd'hui</p>
+            <p>
+              Formation en informatique centrée sur le développement, les bases
+              de données, les systèmes, les réseaux et la gestion de projet.
+            </p>
+          </article>
+          <article class="journey-item">
+            <h3>PeiP Polytech Nancy</h3>
+            <p class="journey-place">Polytech Nancy — Nancy</p>
+            <p class="journey-date">2024 - 2025</p>
+            <p>
+              Première expérience dans l’enseignement supérieur scientifique,
+              suivie d’une réorientation vers le BUT Informatique afin de me
+              rapprocher davantage de mes intérêts pour le développement, les
+              bases de données et les systèmes.
+            </p>
+          </article>
+          <article class="journey-item">
+            <h3>
+              Baccalauréat général - Spécialité Mathématiques et Physique-Chimie
+            </h3>
+            <p class="journey-place">Lycée Henri Loritz — Nancy</p>
+            <p class="journey-date">2024</p>
+            <p>
+              Obtention du baccalauréat, marquant mon entrée dans l’enseignement
+              supérieur scientifique et informatique.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-card">
+          <p>
+            Pour toute prise de contact concernant mon profil, mes projets ou
+            une opportunité liée à l’informatique, vous pouvez me joindre via
+            les liens ci-dessous.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:zayd.benz.pro@proton.me">Me contacter par Email</a>
+            <a href="https://www.linkedin.com/in/zayd-benzakour/">LinkedIn</a>
+            <a href="https://github.com/Andaloussi212">GitHub personnel</a>
+            <a href="https://github.com/Zayd54500">GitHub scolaire</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>2026 BENZAKOUR Zayd — Portfolio personnel</p>
+    </footer>
+  </body>
+</html>
