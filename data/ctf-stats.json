@@ -1,6 +1,5 @@
 {
-  "lastUpdate": "15 juillet 2026",
-
+  "lastUpdate": "15/07/2026",
   "tryhackme": {
     "username": "4ndalussi",
     "rooms": "9",
@@ -11,8 +10,8 @@
   "rootme": {
     "username": "4ndalussi",
     "points": "45",
-    "challenges": "6",
-    "rank": "210600",
+    "challenges": "0",
+    "rank": "210601",
     "profile": "https://www.root-me.org/4ndalussi"
   },
   "hackthebox": {
