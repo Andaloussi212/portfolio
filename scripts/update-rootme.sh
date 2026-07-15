@@ -45,7 +45,15 @@ PROFILE="$(
 
 SCORE="$(jq -r '.score' <<< "$PROFILE")"
 POSITION="$(jq -r '.position' <<< "$PROFILE")"
-CHALLENGES="$(jq -r '.challenges | length' <<< "$PROFILE")"
+CHALLENGES="$(
+  jq '
+    [
+      .. | objects
+      | select(has("id_challenge"))
+    ]
+    | length
+  ' <<< "$PROFILE"
+)"
 UPDATE_DATE="$(date '+%d/%m/%Y')"
 
 TEMP_FILE="$(mktemp)"
