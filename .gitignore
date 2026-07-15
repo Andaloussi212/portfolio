@@ -1,0 +1,47 @@
+# Secrets et variables d’environnement
+.env
+.env.*
+!.env.example
+
+# Réponses temporaires d’API
+rootme-response.json
+data/rootme-response.json
+
+# Logs
+*.log
+logs/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs et IDE
+.vscode/
+.idea/
+*.iml
+
+# Dépendances JavaScript
+node_modules/
+
+# Fichiers générés par des outils de build
+dist/
+build/
+.cache/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Sauvegardes
+*.bak
+*.backup

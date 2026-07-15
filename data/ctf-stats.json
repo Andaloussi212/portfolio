@@ -1,0 +1,25 @@
+{
+  "lastUpdate": "15 juillet 2026",
+
+  "tryhackme": {
+    "username": "4ndalussi",
+    "rooms": "9",
+    "badges": "3",
+    "rank": "top 35%",
+    "profile": "https://tryhackme.com/p/4ndalussi"
+  },
+  "rootme": {
+    "username": "4ndalussi",
+    "points": "45",
+    "challenges": "6",
+    "rank": "210600",
+    "profile": "https://www.root-me.org/4ndalussi"
+  },
+  "hackthebox": {
+    "username": "4ndalussi",
+    "level": "3",
+    "xp": "149",
+    "rank": "Beginner",
+    "profile": "https://profile.hackthebox.com/profile/019f6552-2411-7021-84b0-3d5b9434abe6"
+  }
+}

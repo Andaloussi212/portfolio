@@ -6,16 +6,20 @@
   --accent: #0f766e;
   --accent-secondary: #b45309;
   --border: #ddd6c8;
+  --soft-bg: #f3eadc;
+  --shadow: rgba(32, 33, 36, 0.12);
 }
 
 body.dark-mode {
-  --bg: #171717;
-  --surface: #222222;
-  --text: #f5f1e8;
-  --muted: #c7bfb1;
-  --accent: #2dd4bf;
-  --accent-secondary: #dc2626;
-  --border: #3a3a3a;
+  --bg: #141816;
+  --surface: #1d2421;
+  --text: #eee9df;
+  --muted: #aaa99f;
+  --accent: #70a9a1;
+  --accent-secondary: #c38a51;
+  --border: #343c37;
+  --soft-bg: #2b2822;
+  --shadow: rgba(0, 0, 0, 0.35);
 }
 
 html {
@@ -34,6 +38,16 @@ html {
   box-sizing: border-box;
 }
 
+a,
+button,
+article,
+div {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
@@ -42,6 +56,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 header {
@@ -55,6 +72,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .theme-toggle {
@@ -187,7 +207,7 @@ body.page-loaded #hero {
   border-radius: 32px;
   border: 1px solid var(--border);
   background-color: var(--surface);
-  box-shadow: 0 24px 60px rgba(32, 33, 36, 0.12);
+  box-shadow: 0 24px 60px var(--shadow);
 }
 
 .btn-primary {
@@ -335,7 +355,7 @@ body.page-loaded #hero {
   font-size: 13px;
   font-weight: 600;
   color: var(--accent-secondary);
-  background-color: #f3eadc;
+  background-color: var(--soft-bg);
   padding: 6px 12px;
   border-radius: 999px;
   margin-bottom: 0;
@@ -377,6 +397,138 @@ body.page-loaded #hero {
   color: var(--muted);
 }
 
+.ctf-section {
+  padding: 96px 8%;
+}
+
+.ctf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.ctf-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 14px 35px var(--shadow);
+  min-height: 500px;
+}
+
+.ctf-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.ctf-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.ctf-card-header > div {
+  min-width: 0;
+}
+
+.ctf-card-header h3 {
+  word-break: normal;
+  max-width: 150px;
+}
+
+.ctf-status {
+  flex-shrink: 0;
+}
+
+.ctf-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.ctf-card p {
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+
+.ctf-status {
+  padding: 5px 10px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.ctf-status-learning {
+  color: var(--accent-secondary);
+}
+
+.ctf-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.ctf-stats div {
+  padding: 14px 8px;
+  text-align: center;
+  background-color: var(--soft-bg);
+  border-radius: 12px;
+}
+
+.ctf-stats strong,
+.ctf-stats span {
+  display: block;
+}
+
+.ctf-stats strong {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.ctf-stats span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.ctf-card > a {
+  align-self: flex-start;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ctf-card > a:hover {
+  text-decoration: underline;
+}
+
+.ctf-username {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.ctf-update {
+  margin-top: 24px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.ctf-update span {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .contact-card {
   background-color: var(--surface);
   border: 1px solid var(--border);
@@ -412,7 +564,7 @@ body.page-loaded #hero {
 .contact-links a:hover {
   border-color: var(--accent-secondary);
   color: var(--accent-secondary);
-  background-color: #f3eadc;
+  background-color: var(--soft-bg);
 }
 
 footer {
@@ -688,6 +840,14 @@ li {
   .current-card {
     padding: 20px;
     border-radius: 18px;
+  }
+
+  .ctf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctf-section {
+    padding: 72px 5%;
   }
 
   .back-to-top {
