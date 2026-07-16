@@ -244,6 +244,82 @@ body.page-loaded #hero {
   border-color: var(--accent-secondary);
 }
 
+.opportunity-section {
+  padding: 72px 0;
+}
+
+.opportunity-card {
+  padding: 36px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.opportunity-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: start;
+}
+
+.opportunity-label {
+  margin-bottom: 12px;
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.opportunity-card h2 {
+  margin-bottom: 20px;
+}
+
+.opportunity-intro,
+.opportunity-targets {
+  max-width: 760px;
+}
+
+.opportunity-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.opportunity-details span {
+  padding: 7px 12px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.opportunity-actions {
+  min-width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.opportunity-actions a {
+  text-align: center;
+}
+
+.availability-badge {
+  padding: 8px 12px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 #about p {
   font-size: 18px;
   line-height: 1.7;
@@ -395,6 +471,167 @@ body.page-loaded #hero {
   font-size: 16px;
   line-height: 1.7;
   color: var(--muted);
+}
+
+.experience-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.experience-logo-wrapper {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.experience-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-department {
+  margin: 4px 0 0;
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.experience-tags span {
+  padding: 6px 11px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.experiences-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.experience-card {
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 18px 45px var(--shadow);
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: var(--accent);
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.experience-logo-wrapper {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--shadow);
+}
+
+.experience-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-company {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.experience-department {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 5px 10px;
+  color: var(--accent-secondary);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.experience-date {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.experience-type {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.experience-description {
+  max-width: 900px;
+  line-height: 1.75;
+}
+
+.experience-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
 }
 
 .ctf-section {
@@ -856,5 +1093,53 @@ li {
     width: 42px;
     height: 42px;
     font-size: 20px;
+  }
+
+  .experience-identity {
+    align-items: flex-start;
+  }
+
+  .experience-logo-wrapper {
+    width: 62px;
+    height: 62px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-identity {
+    align-items: flex-start;
+  }
+
+  .experience-logo-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+
+  .experience-actions {
+    flex-direction: column;
+  }
+
+  .experience-actions a {
+    text-align: center;
+  }
+
+  .opportunity-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .opportunity-card {
+    padding: 24px;
+  }
+
+  .opportunity-actions {
+    min-width: 0;
+  }
+
+  .opportunity-details {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
