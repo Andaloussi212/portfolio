@@ -634,6 +634,121 @@ body.page-loaded #hero {
   margin-top: 28px;
 }
 
+/* BADGES ET CERTIFICATIONS */
+
+.certifications-section {
+  padding: 96px 8%;
+}
+
+.certifications-grid {
+  margin-top: 40px;
+}
+
+.certification-card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 36px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 14px 35px var(--shadow);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.certification-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--soft-bg);
+  border-radius: 18px;
+}
+
+.certification-badge img {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
+}
+
+.certification-content {
+  min-width: 0;
+}
+
+.certification-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.certification-issuer {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.certification-header h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.certification-status {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  color: var(--accent);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.certification-date {
+  margin: 12px 0 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.certification-description {
+  margin-bottom: 22px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.certification-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.certification-skills span {
+  padding: 7px 12px;
+  color: var(--text);
+  background-color: var(--soft-bg);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.certification-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .ctf-section {
   padding: 96px 8%;
 }
@@ -1141,5 +1256,26 @@ li {
   .opportunity-details {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    .certification-card {
+      grid-template-columns: 1fr;
+      gap: 26px;
+      padding: 24px;
+    }
+
+    .certification-badge {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .certification-header {
+      flex-direction: column;
+    }
+
+    .certification-header h3 {
+      font-size: 1.35rem;
+    }
   }
 }
