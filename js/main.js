@@ -99,12 +99,13 @@ async function loadCtfStats() {
     document.querySelector('#rootme-profile').href = data.rootme.profile;
 
     document.querySelector('#hackthebox-level').textContent =
-      data.hackthebox.level;
+      `Lv ${data.hackthebox.level}`;
 
-    document.querySelector('#hackthebox-xp').textContent = data.hackthebox.xp;
+    document.querySelector('#hackthebox-xp').textContent =
+      `${data.hackthebox.xp} / ${data.hackthebox.xpMax}`;
 
     document.querySelector('#hackthebox-rank').textContent =
-      data.hackthebox.rank;
+      data.hackthebox.levelTitle;
 
     document.querySelector('#hackthebox-profile').href =
       data.hackthebox.profile;

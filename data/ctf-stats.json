@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "15/07/2026",
+  "lastUpdate": "09/08/2026",
   "tryhackme": {
     "username": "4ndalussi",
     "rooms": "9",
@@ -16,9 +16,13 @@
   },
   "hackthebox": {
     "username": "4ndalussi",
-    "level": "3",
-    "xp": "149",
-    "rank": "Beginner",
-    "profile": "https://profile.hackthebox.com/profile/019f6552-2411-7021-84b0-3d5b9434abe6"
+    "level": 3,
+    "xp": 149,
+    "rank": "Noob",
+    "profile": "https://profile.hackthebox.com/profile/019f6552-2411-7021-84b0-3d5b9434abe6",
+    "points": 0,
+    "levelTitle": "Beginner",
+    "totalXp": 495,
+    "xpMax": 221
   }
 }
